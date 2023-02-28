@@ -1,0 +1,40 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link  rel="stylesheet" href="style.css">
+    <title>Login</title>
+</head>
+<body>
+   <div class="container">
+      <div class="section">
+     
+     <form action="home.html">
+     
+     <h3>Login Form</h3>
+    <label for="user">UserName:</label>
+    <input type="user" name="user" id="user" required> 
+    
+    <label for="password">Password:</label>
+    <input type="password" name="password" id="password" required>
+    <pre></pre>
+    <a href="home.html"><button id="login">Login</button></a><pre></pre>
+    </form>
+    <a href="cancel.html"><button>Cancel</button></a>
+    <pre></pre>
+  </div>
+  </div>
+  <script>
+    let form=document.querySelector('form')
+    form.addEventListener('submit',(e)=>{
+        e.preventDefault
+    let user=document.getElementById("user").value
+    localStorage('user',user)
+
+    })
+  </script>
+</body>
+</html>
